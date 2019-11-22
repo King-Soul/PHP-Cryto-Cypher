@@ -1,3 +1,5 @@
+** SIMPLE SYSTEM FOCUSING ON PASSWORD ENCRYPTION AND SECURE LOGIN METHODS **
+
 This is a simple sistem in PHP that let you cypher all the users passwords.
 
 All the passwords are being encrypted with a Secret key that will be generated automatically in the future.
