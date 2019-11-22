@@ -77,12 +77,30 @@
             <div class="col s3 center-align"><img class="materialboxed center-align" width="200" src="https://d36djlzg0xu24k.cloudfront.net/media/catalog/product/cache/90fd8fb282068e019a2820c65f8ccd15/M/I/MIBAND4_1.jpg"></div>
           </div>
 
-          <div class="row grey">
-            <div class="col s3 center-align"><p class="white-text">25.00€</p></div>
-            <div class="col s3 center-align"><p class="white-text">25.00€</p></div>
-            <div class="col s3 center-align"><p class="white-text">25.00€</p></div>
-            <div class="col s3 center-align"><p class="white-text">25.00€</p></div>
-          </div>
+
+        <?php
+          if(isset($_SESSION['email'])){
+             echo " 
+             <div class='row grey'>
+                <div class='col s3 center-align'><p class='white-text'>25.00€</p></div>
+                <div class='col s3 center-align'><p class='white-text'>25.00€</p></div>
+                <div class='col s3 center-align'><p class='white-text'>25.00€</p></div>
+                <div class='col s3 center-align'><p class='white-text'>25.00€</p></div>
+              </div>
+              ";
+            }else
+
+            echo "
+            
+            <div class='row grey'>
+                <div class='col s3 center-align'><p class='white-text'>--€</p></div>
+                <div class='col s3 center-align'><p class='white-text'>--€</p></div>
+                <div class='col s3 center-align'><p class='white-text'>--€</p></div>
+                <div class='col s3 center-align'><p class='white-text'>--€</p></div>
+              </div>
+            
+            ";
+         ?>
   </div>
 
 </body>
